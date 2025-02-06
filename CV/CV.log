@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.30)  13 DEC 2024 17:56
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.30)  6 FEB 2025 12:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -323,11 +323,11 @@ Package hyperref Info: Link coloring OFF on input line 15.
 \openout3 = `CV.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 36.
+(Font)              <10.95> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 36.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 36.
+(Font)              <6> on input line 38.
  [1
 
 ] [2] (./CV.aux)
@@ -341,7 +341,7 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 Here is how much of TeX's memory you used:
  10210 strings out of 474761
  157416 string characters out of 5761074
- 1951148 words of memory out of 5000000
+ 1953148 words of memory out of 5000000
  32265 multiletter control sequences out of 15000+600000
  561232 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
