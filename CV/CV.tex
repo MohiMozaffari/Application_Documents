@@ -1,9 +1,11 @@
-\documentclass[11pt, b4paper]{cv}
+\documentclass[12pt, b4paper]{cv}
 \usepackage[top=0.4in, left=0.5in, right=0.5in, bottom=0.4in]{geometry}
 \usepackage{fontawesome5}
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{hyphenat}
+
+
 \tolerance=1
 \emergencystretch=\maxdimen
 \hyphenpenalty=100000
@@ -17,7 +19,8 @@
 \begin{center}
 %	    \textit{R\'esum\'e}\\
 	\textit{Curriculum Vitae}\\
-	{\Large \textbf{Mohaddeseh Mozaffari}\par}
+	{\Huge \textbf{Mohaddeseh Mozaffari}\par}
+
 	%\href{tel:(+98)9012051379}{\faIcon{phone} +98(0) 9012051379}
 	\href{mailto:mohaddeseh.mozaffarii@gmail.com}{\faIcon{envelope} mohaddeseh.mozaffarii@gmail.com}
 	\hspace{5pt} 
@@ -33,137 +36,121 @@
 \rule{\textwidth}{1pt}\\
 \vspace{-0.15in}
 
-\textbf{EDUCATION}
+%%%%%%%%%%%%%%
 
-\begin{education}{Sep 2022}{Mar 2025}{Master of Science}{Statistical Physics and Complex Systems}{Shahid Beheshti University}{Tehran, Iran}{18.5 of 20 (\textbf{Second} Rank)}
+% education
+{\Large \textbf{EDUCATION}}
+\vspace{0.1in}
+
+\begin{education}{Sep 2022 -- Mar 2025}{Master of Science}{Statistical Physics and Complex Systems}{Shahid Beheshti University}{Tehran, Iran}{18.5/20 (\textbf{Second} Rank)}%; Admitted via Exceptional Talent Initiative}
 \end{education}
-\begin{education}{Sep 2018}{May 2022}{Bachelor of Science}{Physics}{Shahid Beheshti University}{Tehran, Iran}{17.3 of 20 (\textbf{First} Rank)}
+
+\begin{education}{Sep 2018 -- May 2022}{Bachelor of Science}{Physics}{Shahid Beheshti University}{Tehran, Iran}{17.3/20 (\textbf{First} Rank)}
 \end{education}
+
 
 \vspace{-0.15in}
 \rule{\textwidth}{1pt}\\
 \vspace{-0.15in}
 
-\textbf{RESEARCH INTEREST}
-\vspace{-0.1in}
 
-% \begin{itemize}
-%     \item \textbf{Complex Systems and Computational Science:}  
-%     network dynamics, computational simulations.
+%%%%%%%%%%%%%%%%%
+{\Large \textbf{RESEARCH INTERESTS}}
 
-%     \item \textbf{Neuroscience and Biological Data Analysis:}  
-%     Brain connectivity, cognitive systems, topological data analysis.
-
-%     \item \textbf{Artificial Intelligence and Data Science:}  
-%     computer vision, data-driven solutions for medical imaging.
-% \end{itemize}
-
+\vspace{-5pt}
 \begin{multicols}{3}
 	\begin{itemize}
 		\setlength\itemsep{-1pt}
-		\item Biological Physics
-		\item Cognitive Science
-		\item Complex Systems
-		\item Computational physics
-		\item Data Science
-		\item ML \& AI
+				\item Computational Physics
+				\item Topological Data Analysis
+				\item Brain Network Analysis
+				\item Complex Systems
+				\item Machine Learning
+				\item Artificial Intelligence
+				\item Data Science
+				\item Graph Theory
+				\item Neuroimaging
 	\end{itemize}
 \end{multicols}
 
-% \begin{multicols}{3}
-% 	\begin{itemize}
-% 		\item Biological Physics
-% 		\item Cognitive Science
-% 		\item Network Science
-% 		\item Neuroscience
-% 		\item Complex Systems
-% 		\item Stochastic Processes
-% 		\item Computational physics
-% 		\item Topological data analysis
-% 		\item Data Science
-% 		\item Machine Learning
-% 		\item Artificial Intelligence
-% 		\item Computer Vision
-% 	\end{itemize}
-% \end{multicols}
+
 
 \vspace{-0.15in}
 \rule{\textwidth}{1pt}\\
 \vspace{-0.15in}
 
-\textbf{RESEARCH EXPERIENCE}\\
-\vspace{-0.13in}
+%%%%%%%%%%%%%%%%%%%%%%
+{\Large \textbf{RESEARCH EXPERIENCE}}
+\vspace{0.1in}
 
-\begin{research_exp}{Jan 2024}{Present}{Autism Brain Network Topology (Persistent Homology)}{Shahid Beheshti University, Tehran, Iran}{Prof. Reza Jafari}
-	 
+\begin{research_exp}{Jan 2024 -- Present}{\textbf{Master’s Thesis – Analysis of Topological Features of Brain Networks in the Autism Spectrum Disorder and Control Group Using Persistent Homology}\vspace{5pt}}{Shahid Beheshti University, Tehran, Iran}{Prof. Reza Jafari}
+
+\vspace{10pt}
 \begin{itemize}
-	\item Applied Topological Data Analysis (Persistent Homology) to analyze brain network differences in Autism Spectrum Disorder (ASD) vs. controls, identifying significant variations in connected components and loops.
-	\item Developed a novel node removal method to pinpoint the frontoparietal subnetwork (FPN) as exhibiting the most substantial structural changes in ASD.
-	\item Trained a machine learning model using extracted topological features, successfully discriminating between ASD and control groups and predicting age groups.
+	\item Applied topological data analysis (TDA) and persistent homology to fMRI data, utilizing Vietoris–Rips and Sparse Rips filtrations to identify topological differences in ASD brain networks.
+
+	\item Developed a node-removal-based approach to detect significant changes in the frontoparietal subnetwork of ASD subjects, using Bottleneck and Wasserstein distances for quantification.
+	
+	\item Investigated age-related differences in brain network topology (childhood, adolescence, adulthood), highlighting connected components and loops as key indicators of ASD.
+	
+	\item Trained machine learning models using topological features to classify ASD vs. control subjects and predict age groups, demonstrating the potential for enhanced diagnostic accuracy.
+	
+	\item Developed a private Python package, \texttt{NeuroPHorm}, to streamline and automate the full TDA workflow; currently under internal use and documentation for potential release.
 \end{itemize}
 \end{research_exp}
-\vspace{-0.1in}
 
-\begin{research_exp}{Dec 2023}{Present}{Segmentation of Coronary Arteries Using Deep Learning}{Shahid Rajaei Heart Hospital, Tehran, Iran}{Mehdi Yousefzadeh}
-	\begin{itemize}
-        \item Collected and processed medical data from the hospital, working with DICOM files to identify and label vessels and catheters.
-        \item Developed custom augmentation techniques to enhance data quality and improve segmentation accuracy.	\end{itemize}
-	
-\end{research_exp}
-\vspace{-0.1in}
 
-\begin{research_exp}{Aug 2022}{Oct 2022}{Abnormality Detection in Head CT Scan Reports using Text Mining
-	}{Imam Hossein Hospital Research Council, Tehran, Iran}{Mehdi Yousefzadeh}
-	
+\begin{research_exp}{Dec 2023 -- Present}{\textbf{Automatic Classification and Segmentation of Coronary Arteries Using AI}}{Shahid Rajaei Heart Hospital, Tehran, Iran}{Dr. Mehdi Yousefzadeh}
+\vspace{10pt}
 	\begin{itemize}
-		\item Conducted text mining and preprocessing on radiology reports to detect abnormalities.
+		\item Collaborated on building an angiography dataset from X-ray Coronary Angiography (XCA), including DICOM handling, data cleaning, and vessel annotation.
+
+		\item Co-developed segmentation pipelines using classical image processing (Frangi, Sato, Meijering filters) and deep learning models (U-Net, U-Net3+, FPN).
+
+		\item Contributed specifically to image enhancement using the Meijering and Sato filters for coronary vessel segmentation.
+
+		\item Achieved a 93\% Dice score on the test set, exceeding performance of many recent segmentation approaches.
 	\end{itemize}
+	
 \end{research_exp}
-    
+
 
 \vspace{-0.15in}
 \rule{\textwidth}{1pt}\\
 \vspace{-0.15in}
 
-\textbf{PUBLICATIONS}
-\vspace{-0.10in}
+{\Large \textbf{PUBLICATIONS}}
+\vspace{-5pt}
 
 \begin{itemize}
-	\item 	Mohammadi, M.S., Shahrokhi, S., \textbf{Mozaffari, M.} et al. Nonlinear optical response of IMIP ionic
-	liquid-stabilized magnetic graphene oxide sheets. J Mater Sci: Mater Electron 33, 13224–13233
-	(2022).
+	\item Mohammadi, M.S., Shahrokhi, S., \textbf{Mozaffari, M.} et al. Nonlinear optical response of IMIP ionic liquid-stabilized magnetic graphene oxide sheets. J Mater Sci: Mater Electron 33, 13224–13233 (2022).
 \end{itemize}
 
 
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
+% \vspace{-0.15in}
+% \rule{\textwidth}{1pt}\\
+% \vspace{-0.15in}
 
-\textbf{HONORS AND AWARDS}
-\vspace{-0.10in}
-
-\begin{itemize}
-    % \item \textbf{Second rank} in M.Sc. Statistical Physics and Complex Systems, Shahid Beheshti University (2023).
-	\item Admitted to the master’s program through \textbf{the Exceptional Talent initiative} for top students (2022).
-	% \item \textbf{First rank} among B.Sc. students, Physics Department, Shahid Beheshti University (2021-2022).
-    \item \textbf{Top 1\%} in nationwide university entrance exam in Iran (2018).
-\end{itemize}
-
-
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-\textbf{SKILLS}
+% \textbf{HONORS AND AWARDS}
+% \vspace{-0.10in}
 
 % \begin{itemize}
-%     \item \textbf{Programming Languages:} Python (Advanced), C++ (Intermediate), Bash/Linux (Intermediate), HTML (Elementary), CSS (Elementary)
-%     \item \textbf{Software \& Tools:} Git (Advanced), \LaTeX{} (Advanced), Microsoft Office Suite (Advanced), Adobe Illustrator (Advanced), Adobe Photoshop (Intermediate)
-%     \item \textbf{Other Skills:} Data Analysis, Machine Learning, Numerical Simulations
+%     % \item \textbf{Second rank} in M.Sc. Statistical Physics and Complex Systems, Shahid Beheshti University (2023).
+% 	\item Admitted to the master’s program through \textbf{the Exceptional Talent initiative} for top students (2022).
+% 	% \item \textbf{First rank} among B.Sc. students, Physics Department, Shahid Beheshti University (2021-2022).
+%     \item \textbf{Top 1\%} in nationwide university entrance exam in Iran (2018).
 % \end{itemize}
 
-\textit{Cumputing}
-\vspace{-0.1in}
+\vspace{-0.15in}
+\rule{\textwidth}{1pt}\\
+\vspace{-0.15in}
+
+% Skills
+
+{\Large \textbf{SKILLS}}
+\vspace{5pt}
+
+\textit{Computing}
 
 \begin{multicols}{3}[]
 	\begin{itemize}
@@ -174,84 +161,101 @@
 	  \item  Bash/Linux (Intermediate)
 	  \item  Adobe Illustrator (Advanced)
 	  \item  Adobe Photoshop (Intermediate)
-	  \item  HTML, CSS (Elementary)
+	  \item  HTML/CSS (Elementary)
 	  \item  \LaTeX  (Advanced)
 	  \item  Microsoft Office Suite: Word, Excel, PowerPoint (Advanced)
 	\end{itemize}
 \end{multicols}
 
-\vspace{-0.1in}
 \textit{Languages}
-\vspace{-0.1in}
 
 \begin{multicols}{3}[]
 	\begin{itemize}
 	\setlength\itemsep{-1pt}
 	  \item  Persian (Native)
 	  \item  English (Fluent)
-	  \item  French (Beginner)
 	\end{itemize}
 \end{multicols}
 
 \pagebreak
+\vspace{-0.15in}
 \rule{\textwidth}{1pt}\\
 \vspace{-0.15in}
 
-\textbf{WORK EXPERIENCE}
+{\Large \textbf{TEACHING EXPERIENCE}}
+\vspace{0.1in}
 
-\begin{work}{Jul 2024}{Present}{Python Instructor}{Ostadbank, Tehran, Iran}
+\begin{work}{}{Teaching Assistant}{Department of Physics, Shahid Beheshti University}
+	\vspace{-0.3in}
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item Complex Systems Physics (Jan 2025 – Jul 2025)
+			\item Complex Networks and Graph Theory (Jan 2025 – Jul 2025)
+			\item Stochastic Processes (Jan 2024 – Jul 2024)
+			\item Foundations of Numerical Simulations (Sep 2023 – Jan 2024)
+			\item Complex Systems Physics (Sep 2023 – Jan 2024)
+			\item Analytical Mechanics (Sep 2022 – Jan 2023)
+		\end{itemize}    
+	\end{multicols}
+\end{work}
+\vspace{-0.15in}
+
+
+
+\vspace{-0.15in}
+\rule{\textwidth}{1pt}\\
+\vspace{-0.15in}
+
+{\Large \textbf{WORK EXPERIENCE}}
+\vspace{0.1in}
+
+\begin{work}{Jul 2024 -- Present}{Python Instructor}{Ostadbank, Tehran, Iran}
+\vspace{-0.1in}
 	\begin{itemize}
-		\item Teaching Python object-oriented programming, machine learning, and AI to students, focusing on real-world applications and mini projects.
+		\item Deliver tailored Python lessons on OOP, ML, and AI to diverse learners.
+		\item Guide students in mini-projects using scikit-learn, pandas, Matplotlib, Keras, and TensorFlow.
 	\end{itemize}
-	%Ostadbak is a platform connecting private tutors with learners. I teach Python object-oriented programming, machine learning, and AI, helping students build mini projects to apply their skills in real-world scenarios.
+
 \end{work}
 
 \vspace{-0.1in}
 
-\begin{work}{Jun 2023}{Present}{Python Instructor}{Picha Club, Tehran, Iran}
-	\begin{itemize}
-		\item Instructing pre-teens and teens in Python fundamentals, algorithms, and Tkinter.
-		\item Guiding students through game development projects.
+\begin{work}{Jun 2023 -- Present}{Python Instructor}{Picha Club, Tehran, Iran}
+\vspace{-0.1in}
+\begin{itemize}
+		\item Teach Python fundamentals, algorithms, and OOP to pre-teens and teens.
+		\item Support students in building Tkinter apps and Pygame games.
 	\end{itemize}
-	%Picha is an online programming school for pre-teens and teens. I teach Python fundamentals, algorithms, object-oriented programming, and Tkinter for building applications, while also guiding students through game development using classes and projects.
 \end{work}
+
+
+
 
 \vspace{-0.15in}
 \rule{\textwidth}{1pt}
 \vspace{-0.15in}
 
-\textbf{TEACHING EXPERIENCE}
 
-\textbf{Position:} Teaching Assistant\\
-\textbf{Where:} \hspace{0.1in}Department of Physics, Shahid Beheshti University, Tehran, Iran\\
-\textbf{Courses:}
-\begin{multicols}{2}
-	\begin{itemize}
-		\item Complex Systems Physics (Jan 2025 – Jul 2025)
-		\item Complex Networks and Graph Theory (Jan 2025 – Jul 2025)
-		\item Stochastic Processes (Jan 2024 – Jul 2024)
-		\item Foundations of Numerical Simulations (Sep 2023 – Jan 2024)
-		\item Complex Systems Physics (Sep 2023 – Jan 2024)
-		\item Analytical Mechanics (Sep 2022 – Jan 2023)
-	\end{itemize}    
-\end{multicols}
-% \textbf{Key Responsibilities:}
 
-% \begin{adjustwidth}{}{\rightedge}
-% \begin{itemize}
-%     \item Designed problem sets and solution classes to reinforce theoretical concepts.
-%     \item Taught Python programming and numerical simulations to students, helping them apply computational techniques to solve complex physics problems.
-%     \item Guided students in hands-on projects, focusing on the practical application of course materials.
-%     \item Provided one-on-one support during office hours to clarify course content and assist with assignments.
-% \end{itemize}
-% \end{adjustwidth}
+{\Large \textbf{INVITED TALKS}}
+\vspace{0.1in}
+
+\begin{school}{Apr 2025}{Yasouj University, Yasouj, Iran}{Statistical Physics and Complex Systems}
+\vspace{-0.1in}
+\begin{itemize}
+	\item Introduced undergraduate physics students to complex systems in an invited online Persian talk.
+	% \item Outlined research and career pathways in statistical physics and complex systems.
+\end{itemize}
+\end{school}
+
+
 
 \vspace{-0.15in}
 \rule{\textwidth}{1pt}\\
 \vspace{-0.15in}
 
-\textbf{CERTIFICATIONS}
-\vspace{-0.1in}
+{\Large \textbf{CERTIFICATIONS}}
+\vspace{-5pt}
 
 \begin{itemize}
 	\item Machine Learning Specialization, Coursera (2023).
@@ -260,79 +264,75 @@
 	\item Quantum Information and Computers, Interdisciplinary Schools, Sharif University of Technology (2021).
 \end{itemize}
 
+
 \vspace{-0.15in}
 \rule{\textwidth}{1pt}\\
 \vspace{-0.15in}
 
-\textbf{CONFERENCES \& SCHOOLS ATTENDED}
+{\Large \textbf{WORKSHOPS, SCHOOLS, AND CONFERENCES ATTENDED}}
+\vspace{0.1in}
 
-\begin{school}{Nov 2024}{Nov 2024}{Shahid Beheshti University, Tehran, Iran}{fMRI Image Processing With CONN Toolbox}
+\begin{school}{Nov 2024}{Shahid Beheshti University, Tehran, Iran}{fMRI Image Processing With CONN Toolbox}
+\vspace{-0.1in}
 	\begin{itemize}
 	    \item Gained hands-on experience in preprocessing, denoising, and connectivity analysis for resting-state and task-based fMRI using the CONN toolbox.
 	\end{itemize}
 \end{school}
-\vspace{-0.1in}
 
-\begin{school}{Sep 2024}{Sep 2024}{Shahrood University of Technology, Semnan, Iran}{5th National Conference on Quantum Information and Computing}
+
+\begin{school}{Sep 2024}{Shahrood University of Technology, Semnan, Iran}{5th National Conference on Quantum Information and Computing}
+\vspace{-0.1in}
 	\begin{itemize}
 	    \item Attended presentations on the latest advancements in quantum information theory and quantum computing.
 	\end{itemize}
 \end{school}
-\vspace{-0.1in}
 
-\begin{school}{Oct 2023}{Dec 2023}{School of Biological Sciences, IPM, Tehran, Iran}{The School of Evolutionary Dynamics of Cells and Viruses}
+
+\begin{school}{Oct -- Dec 2023}{School of Biological Sciences, IPM, Tehran, Iran}{The School of Evolutionary Dynamics of Cells and Viruses}
+\vspace{-0.1in}
 	\begin{itemize}
 	    \item Participated in lectures and discussions on evolutionary dynamics in cells and viruses.
 	    \item Explored theoretical models and their biological applications.
 	\end{itemize}
 \end{school}
-\vspace{-0.1in}
 
-\begin{school}{Jul 2023}{Jul 2023}{Institute for Advanced Studies in Basic Science, Zanjan, Iran}{The $28^{th}$ Special School on Topics in Physics}
+
+\begin{school}{Jul 2023}{Institute for Advanced Studies in Basic Science, Zanjan, Iran}{The $28^{th}$ Special School on Topics in Physics}
+\vspace{-0.1in}
 	\begin{itemize}
 	    \item Engaged in advanced discussions on topics like condensed matter physics, quantum mechanics, and biosensing technologies.
 	\end{itemize}
 \end{school}
-% \vspace{-0.15in}
-% \rule{\textwidth}{1pt}\\
+
+
+
+\vspace{-0.15in}
+\rule{\textwidth}{1pt}\\
+\vspace{-0.15in}
+
+
+
+
+% \textbf{PERSONAL INFORMATION}
 % \vspace{-0.1in}
 
-
-% \textbf{LANGUAGES}
-
-% \begin{multicols}{3}[]
+% \begin{multicols}{3}[\columnsep=0cm]
 % 	\begin{itemize}
-% 	  \item  Persian (Native)
-% 	  \item  English (Fluent)
+% 	  \item Gender: Female
+% 	  \item Nationality: Iranian
+% 	  \item Date of Birth: Aug. $10^{th}$, 2000
+% 	  %\item Hobbies: Walking, Reading Books, Painting
 % 	\end{itemize}
 % \end{multicols}
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
 
-\textbf{PERSONAL INFORMATION}
-\vspace{-0.1in}
+% \vspace{-0.15in}
+% \rule{\textwidth}{1pt}\\
+% \vspace{-0.15in}
 
-\begin{multicols}{3}[\columnsep=0cm]
-	\begin{itemize}
-	  \item Gender: Female
-	  \item Nationality: Iranian
-	  \item Date of Birth: Aug. $10^{th}$, 2000
-	  %\item Hobbies: Walking, Reading Books, Painting
-	\end{itemize}
-\end{multicols}
-
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-\textbf{REFERENCES}
-\vspace{-0.1in}
+{\Large \textbf{REFERENCES}}
 
 \begin{itemize}
 	\item \textbf{Reza Jafari}, Professor of Physics, Department of Physics and Institute for Cognitive Science and Brian, Shahid Beheshti University, Tehran, Iran.\\
-	
-	
 	\href{tel:(+98)2129902773}{\faIcon{phone} (+98) 21 2990 2773}
 	\hspace{0.5in}
 	\href{mailto:g\_jafari@sbu.ac.ir}{\faIcon{envelope} g\_jafari@sbu.ac.ir}
@@ -341,7 +341,6 @@
 	\hspace{1.14in}
 	\href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{\faIcon{globe}HomePage} 
 	\item \textbf{S. Ali Hosseiny Esfidvajani}, Assistant Professor, Faculty of Physics, Shahid Beheshti University, Tehran, Iran.\\
-	
 	\href{tel:(+98)2129905043}{\faIcon{phone} (+98) 21 2990 5043}
 	\hspace{0.5in}
 	\href{mailto:al\_hosseiny@sbu.ac.ir}{\faIcon{envelope} al\_hosseiny@sbu.ac.ir}
@@ -349,9 +348,7 @@
 	\href{mailto:alihd22@gmail.com}{\faIcon{envelope} alihd22@gmail.com}
 	\hspace{1.091in}
 	\href{https://alihosseiny.com/}{\faIcon{globe}HomePage} 
-		
 	\item \textbf{Marzieh Farhang}, Associate Professor, Faculty of Physics, Shahid Beheshti University, Tehran, Iran.\\
-	
 	\href{tel:(+98)2129905053}{\faIcon{phone} (+98) 21 2990 5053}
 	\hspace{0.5in}
 	\href{mailto:m\_farhang@sbu.ac.ir}{\faIcon{envelope} m\_farhang@sbu.ac.ir}

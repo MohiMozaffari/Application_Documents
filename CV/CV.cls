@@ -1,4 +1,4 @@
-\ProvidesClass{cv}[2020/11/13 v1.1 CV class]
+\ProvidesClass{cv}[2025/05/09]
 
 \LoadClass[11pt]{article}
 
@@ -6,54 +6,53 @@
 
 \usepackage{tabto}
 \usepackage{changepage}
+\usepackage{ragged2e} % For better right alignment
 
-\addtolength{\topmargin}{-1.5cm}
-\def \spacing {1.1in}
-\def \rightedge {0.5in}
-\def \tabspace {1.8in}
+\def \spacing {0in} % Adjusted spacing for left information
+\def \rightedge {0in}
+\def \tabspace {0.7in}
 
 \setlength{\parindent}{0pt}
 
-\newenvironment{education}[7]
-    {\textit{#1}---\tabto{\spacing}\textbf{Degree:}\tabto{\tabspace}#3 in #4\\
-    \textit{#2}\tabto{\spacing}\textbf{Where:}\tabto{\tabspace}#5, #6\\
-    \tabto{\spacing}\textbf{GPA:}\tabto{\tabspace}#7
-    \begin{adjustwidth}{\spacing}{\rightedge}
-    }
-    {\end{adjustwidth}
-    }
 
-\newenvironment{research_exp}[5]
-    {\textit{#1}---\tabto{\spacing}\textbf{Project:}\tabto{\tabspace}#3\\
-    \textit{#2}\tabto{\spacing}\textbf{Where:}\tabto{\tabspace}#4\\
-    \tabto{\spacing}\textbf{Advisor:}\tabto{\tabspace}#5\\
-    \vspace{-0.1in}
-    \begin{adjustwidth}{\spacing}{\rightedge}
-    }
-    {
-    \end{adjustwidth}
-    \vspace{0.2in}
-    }
+% Updated education environment with single date
+\newenvironment{education}[6] % Date, Degree, Field, Where, City, GPA
+  {\noindent\textbf{Degree:}\tabto{\tabspace}#2 in #3\hfill\textit{#1}\\%
+   \textbf{Where:}\tabto{\tabspace}#4, #5\\%
+   \textbf{GPA:}\tabto{\tabspace}#6%
+   \begin{adjustwidth}{\spacing}{\rightedge}
+  }
+  {\end{adjustwidth}
+  }
 
+% Updated research experience environment with single date
+\newenvironment{research_exp}[4] % Date, Project, Where, Advisor
+  {\noindent\textbf{Project:}\tabto{\tabspace}\parbox[t]{0.7\linewidth}{#2}\hfill\textit{#1}\\%
+   \textbf{Where:}\tabto{\tabspace}#3\\%
+   \textbf{Advisor:}\tabto{\tabspace}#4%
+   \vspace{-0.1in}
+   \begin{adjustwidth}{\spacing}{\rightedge}
+  }
+  {\end{adjustwidth}
+   \vspace{0.2in}
+  }
 
-\newenvironment{work}[4]
-    {\textit{#1}---\tabto{\spacing}\textbf{Position:}\tabto{\tabspace}#3\\
-    \textit{#2}\tabto{\spacing}\textbf{Where:}\tabto{\tabspace}#4\\
-    \vspace{-0.1in}
-    \begin{adjustwidth}{\spacing}{\rightedge}
-    }
-    {
-    \end{adjustwidth}
-    \vspace{0.2in}
-    }
+% Updated work environment with single date
+\newenvironment{work}[3] % Date, Position, Where
+  {\noindent\textbf{Position:}\tabto{\tabspace}#2\hfill\textit{#1}\\%
+   \textbf{Where:}\tabto{\tabspace}#3\\%
+   \begin{adjustwidth}{\spacing}{\rightedge}
+  }
+  {\end{adjustwidth}
+   \vspace{0.2in}
+  }
 
-\newenvironment{school}[4]
-{\textit{#1}---\tabto{\spacing}\textbf{Where:}\tabto{\tabspace}#3\\
-\textit{#2}\tabto{\spacing}\textbf{Title:}\tabto{\tabspace}#4\\
-\vspace{-0.1in}
-\begin{adjustwidth}{\spacing}{\rightedge}
-}
-{
-\end{adjustwidth}
-\vspace{0.2in}
-}
+% Updated school/workshop environment with single date
+\newenvironment{school}[3] % Date, Where, Title
+  {\noindent\textbf{Where:}\tabto{\tabspace}#2\hfill\textit{#1}\\%
+   \textbf{Title:}\tabto{\tabspace}#3\\%
+   \begin{adjustwidth}{\spacing}{\rightedge}
+  }
+  {\end{adjustwidth}
+   \vspace{0.2in}
+  }
