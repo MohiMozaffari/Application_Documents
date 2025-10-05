@@ -1,17 +1,25 @@
 \documentclass[12pt, b4paper]{cv}
-\usepackage[top=0.4in, left=0.5in, right=0.5in, bottom=0.4in]{geometry}
+\usepackage[top=0.5in, left=0.5in, right=0.5in, bottom=0.5in]{geometry}
 \usepackage{fontawesome5}
-\usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{hyphenat}
+\usepackage{xcolor}
 
+\definecolor{purple}{RGB}{100,50,150}
+
+\usepackage[
+    colorlinks = true,
+    linkcolor  = purple,
+    urlcolor   = purple,
+    citecolor  = purple
+]{hyperref}
 
 \tolerance=1
 \emergencystretch=\maxdimen
 \hyphenpenalty=100000
 \hbadness=100000
 
-\renewcommand{\baselinestretch}{1.0} % Adjusted line spacing
+\renewcommand{\baselinestretch}{1.} % Adjusted line spacing
 
 
 \begin{document}
@@ -42,12 +50,12 @@
 {\Large \textbf{EDUCATION}}
 \vspace{0.1in}
 
-\begin{education}{Sep 2022 -- Mar 2025}{Master of Science}{Statistical Physics and Complex Systems}{Shahid Beheshti University}{Tehran, Iran}{18.5/20 (\textbf{Second} Rank)}%; Admitted via Exceptional Talent Initiative}
+
+\begin{education}{Sep 2022 -- Mar 2025}{M.Sc.}{Statistical Physics and Complex Systems}{Shahid Beheshti University}{Tehran, Iran}{{18.5/20 (\textasciitilde 4.00/4.00 WES, \textbf{Second Rank})}}%; Admitted via Exceptional Talent Initiative}
 \end{education}
 
-\begin{education}{Sep 2018 -- May 2022}{Bachelor of Science}{Physics}{Shahid Beheshti University}{Tehran, Iran}{17.3/20 (\textbf{First} Rank)}
+\begin{education}{Sep 2018 -- May 2022}{B.Sc.}{Physics}{Shahid Beheshti University}{Tehran, Iran}{17.3/20 (\textasciitilde 3.63/4.00 WES, \textbf{First Rank})}
 \end{education}
-
 
 \vspace{-0.15in}
 \rule{\textwidth}{1pt}\\
@@ -80,34 +88,35 @@
 {\Large \textbf{RESEARCH EXPERIENCE}}
 \vspace{0.1in}
 
-\begin{research_exp}{Jul 2025 -- Present}{\textbf{Coevolutionary and Structural Balance Network Analysis and Classification of ADHD Using the Open-Source ADHD-400 Dataset}\vspace{5pt}}{Center for Complex Networks (CCNet), Tehran, Iran}{Prof. Reza Jafari}
+\begin{research_exp}{Jul 2025 -- Present}{\textbf{Coevolutionary and Structural Balance Network Analysis and Classification of ADHD Using the Open-Source ADHD-400 Dataset}\vspace{5pt}}{Center for Complex Networks (CCNet), Tehran, Iran}{\href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{Prof. Reza Jafari}}
 
 \vspace{10pt}
 \begin{itemize}
-    \item Collaborated on the development and implementation of Coevolutionary and Structural Balance Theories to extract motif-based energy and imbalance metrics from functional brain networks.
+    \item Collaborated on the application of stuctural and Coevolutionary balance theory on brain networks.
 
-    \item Engineered balance-theoretic features from motif structures, network energy profiles, and polarity patterns for group-level differentiation.
+    \item Engineered balance-theoretic features for group-level differentiation.
 
-    \item Designed and trained machine learning models to classify ADHD vs. control subjects based on extracted topological features.
+    \item Trained machine learning models to classify ADHD vs. control subjects.
 
     \item Contributed to drafting, editing, and reviewing the manuscript for publication.
 \end{itemize}
 \end{research_exp}
 
 
-\begin{research_exp}{Jan 2024 -- Present}{\textbf{Master’s Thesis – Analysis of Topological Features of Brain Networks in the Autism Spectrum Disorder and Control Group Using Persistent Homology}\vspace{5pt}}{Shahid Beheshti University, Tehran, Iran}{Prof. Reza Jafari}
+\begin{research_exp}{Jan 2024 -- Present}{\textbf{Master’s Thesis – Analysis of Topological Features of Brain Networks in the Autism Spectrum Disorder and Control Group Using Persistent Homology}\vspace{5pt}}{Shahid Beheshti University, Tehran, Iran}{\href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{Prof. Reza Jafari}}
 
 \vspace{10pt}
 \begin{itemize}
-	\item Applied topological data analysis (TDA) and persistent homology to fMRI data, utilizing Vietoris–Rips and Sparse Rips filtrations to identify topological differences in ASD brain networks.
+	
+	\item Applied topological data analysis (TDA) and persistent homology on fMRI data.
 
-	\item Developed a node-removal-based approach to detect significant changes in the frontoparietal subnetwork of ASD subjects, using Bottleneck and Wasserstein distances for quantification.
+	\item Developed a node-removal-based approach to detect differences in topological features.
 	
-	\item Investigated age-related differences in brain network topology (childhood, adolescence, adulthood), highlighting connected components and loops as key indicators of ASD.
-	
-	\item Trained machine learning models using topological features to classify ASD vs. control subjects and predict age groups, demonstrating the potential for enhanced diagnostic accuracy.
-	
-	\item Developed a private Python package, \texttt{NeuroPHorm}, to streamline and automate the full TDA workflow; currently under internal use and documentation for potential release.
+	\item Investigated age-related differences in brain network topology.
+
+	\item Trained machine learning models to classify study groups.
+
+	\item Developed a private Python package, \texttt{NeuroPHorm}, to automate the full TDA workflow.
 \end{itemize}
 \end{research_exp}
 
@@ -137,9 +146,11 @@
 % ---------- Journal Articles ----------
 \textit{Journal Articles}
 \begin{itemize}
-    \item Mohammadi, M.S., Shahrokhi, S., \textbf{Mozaffari, M.} \textit{et al.}
+\item Mohammadi, M.S., Shahrokhi, S., \textbf{Mozaffari, M.} \textit{et al.}
     Nonlinear optical response of IMIP ionic liquid-stabilized magnetic graphene oxide sheets.
     \textit{Journal of Materials Science: Materials in Electronics}, 33, 13224–13233 (2022).
+    \href{https://doi.org/10.1007/s10854-022-08262-1}{DOI:10.1007/s10854-022-08262-1}
+
 \end{itemize}
 
 % ---------- Conference Papers ----------
@@ -223,15 +234,15 @@
 \vspace{0.1in}
 
 \begin{work}{}{Teaching Assistant}{Department of Physics, Shahid Beheshti University}
-	\vspace{-0.3in}
+	\vspace{-0.2in}
 	\begin{multicols}{2}
 		\begin{itemize}
-			\item Complex Systems Physics (Jan 2025 – Jul 2025)
-			\item Complex Networks and Graph Theory (Jan 2025 – Jul 2025)
-			\item Stochastic Processes (Jan 2024 – Jul 2024)
-			\item Foundations of Numerical Simulations (Sep 2023 – Jan 2024)
-			\item Complex Systems Physics (Sep 2023 – Jan 2024)
-			\item Analytical Mechanics (Sep 2022 – Jan 2023)
+			\item Complex Systems Physics \textit{(Jan 2025 – Jul 2025)}
+			\item Complex Networks and Graph Theory \textit{(Jan 2025 – Jul 2025)}
+			\item Stochastic Processes \textit{(Jan 2024 – Jul 2024)}
+			\item Foundations of Numerical Simulations \textit{(Sep 2023 – Jan 2024)}
+			\item Complex Systems Physics \textit{(Sep 2023 – Jan 2024)}
+			\item Analytical Mechanics \textit{(Sep 2022 – Jan 2023)}
 		\end{itemize}    
 	\end{multicols}
 \end{work}
@@ -247,22 +258,23 @@
 \vspace{0.1in}
 
 \begin{work}{Jul 2024 -- Present}{Python Instructor}{Ostadbank, Tehran, Iran}
-\vspace{-0.1in}
-	\begin{itemize}
-		\item Deliver tailored Python lessons on OOP, ML, and AI to diverse learners.
-		\item Guide students in mini-projects using scikit-learn, pandas, Matplotlib, Keras, and TensorFlow.
-	\end{itemize}
-
+\vspace{-0.05in}
+\begin{itemize}
+    \item Deliver tailored Python lessons on OOP, ML, and AI to diverse learners.
+    \item Guide students in mini-projects using NumPy, pandas, Matplotlib, seaborn, scikit-learn, and PyTorch.
+    % \item \href{https://www.ostadbank.com/tutor/mohimozaffari}{Public profile (Persian)}
+\end{itemize}
 \end{work}
 
-\vspace{-0.1in}
+\vspace{-0.05in}
 
 \begin{work}{Jun 2023 -- Present}{Python Instructor}{Picha Club, Tehran, Iran}
-\vspace{-0.1in}
+\vspace{-0.05in}
 \begin{itemize}
-		\item Teach Python fundamentals, algorithms, and OOP to pre-teens and teens.
-		\item Support students in building Tkinter apps and Pygame games.
-	\end{itemize}
+    \item Teach Python fundamentals, algorithms, and OOP to pre-teens and teens.
+    \item Support students in building Tkinter apps and Pygame games.
+    % \item \href{https://pichaclub.ir/m-mozafari/}{Public profile (Persian)}
+\end{itemize}
 \end{work}
 
 
@@ -280,8 +292,9 @@
 \begin{school}{Apr 2025}{Yasouj University, Yasouj, Iran}{Statistical Physics and Complex Systems}
 \vspace{-0.1in}
 \begin{itemize}
-	\item Introduced undergraduate physics students to complex systems in an invited online Persian talk.
-	% \item Outlined research and career pathways in statistical physics and complex systems.
+    \item Introduced undergraduate physics students to complex systems in an invited online Persian talk
+          \href{https://www.aparat.com/v/szyh283}{(Recording available)}.
+    % \item Outlined research and career pathways in statistical physics and complex systems.
 \end{itemize}
 \end{school}
 
@@ -295,12 +308,14 @@
 \vspace{-5pt}
 
 \begin{itemize}
-    \item Deep Learning (Python) for Neuroscience EEG Practical Course — Udemy, Instructor: Ildar Rakhmatulin (Aug 2025)
-    \item Machine Learning Specialization — Coursera / Stanford Online, Instructor: Andrew Ng (Sep 2023)
-    \item Neural Networks and Deep Learning — DeepLearning.AI / Coursera, Instructor: Andrew Ng (Aug 2022)
-	% \item Quantum Computing and Implementation in Python, Qorpi Engineering Workgroup – KNTU Innovation Center (2022).
-	% \item Quantum Information and Computers, Interdisciplinary Schools, Sharif University of Technology (2021).
+    \item Deep Learning (Python) for Neuroscience EEG Practical Course — Udemy, Instructor: Ildar Rakhmatulin \textit{(Aug 2025)}
+          \href{https://www.udemy.com/certificate/UC-1c61cc70-1c1f-49fc-b6b1-972fa68f97df/}{(Certificate)}
+    \item Machine Learning Specialization — Coursera / Stanford Online, Instructor: Andrew Ng \textit{(Sep 2023)}
+          \href{https://coursera.org/share/73ec39657746dc6a319fa5a123047ccf}{(Certificate)}
+    \item Neural Networks and Deep Learning — DeepLearning.AI / Coursera, Instructor: Andrew Ng \textit{(Aug 2022)}
+          \href{https://coursera.org/share/601e36dd06712caa01ff9b867a6bf7a7}{(Certificate)}
 \end{itemize}
+
 
 
 \vspace{-0.15in}
@@ -308,14 +323,20 @@
 \vspace{-0.15in}
 
 {\Large \textbf{WORKSHOPS, SCHOOLS, AND CONFERENCES ATTENDED}}
-\vspace{0.1in}
+\vspace{-5pt}
 
-\begin{school}{Nov 2024}{Shahid Beheshti University, Tehran, Iran}{fMRI Image Processing With CONN Toolbox}
-\vspace{-0.1in}
-	\begin{itemize}
-	    \item Gained hands-on experience in preprocessing, denoising, and connectivity analysis for resting-state and task-based fMRI using the CONN toolbox.
-	\end{itemize}
-\end{school}
+\begin{itemize}
+    \item fMRI Image Processing With CONN Toolbox — Shahid Beheshti University, Tehran, Iran \textit{(Nov 2024)}
+    % \item 5th National Conference on Quantum Information and Computing — Shahrood University of Technology, Semnan, Iran (Sep 2024)
+    \item The School of Evolutionary Dynamics of Cells and Viruses — School of Biological Sciences, IPM, Tehran, Iran \textit{(Dec 2023)}
+    \item The $28^{th}$ Special School on Topics in Physics — Institute for Advanced Studies in Basic Science, Zanjan, Iran \textit{(Jul 2023)}
+\end{itemize}
+% \begin{school}{Nov 2024}{Shahid Beheshti University, Tehran, Iran}{fMRI Image Processing With CONN Toolbox}
+% \vspace{-0.1in}
+% 	\begin{itemize}
+% 	    \item Gained hands-on experience in preprocessing, denoising, and connectivity analysis for resting-state and task-based fMRI using the CONN toolbox.
+% 	\end{itemize}
+% \end{school}
 
 
 % \begin{school}{Sep 2024}{Shahrood University of Technology, Semnan, Iran}{5th National Conference on Quantum Information and Computing}
@@ -326,13 +347,13 @@
 % \end{school}
 
 
-\begin{school}{Oct -- Dec 2023}{School of Biological Sciences, IPM, Tehran, Iran}{The School of Evolutionary Dynamics of Cells and Viruses}
-\vspace{-0.1in}
-	\begin{itemize}
-	    \item Participated in lectures and discussions on evolutionary dynamics in cells and viruses.
-	    \item Explored theoretical models and their biological applications.
-	\end{itemize}
-\end{school}
+% \begin{school}{Dec 2023}{School of Biological Sciences, IPM, Tehran, Iran}{The School of Evolutionary Dynamics of Cells and Viruses}
+% \vspace{-0.1in}
+% 	\begin{itemize}
+% 	    \item Participated in lectures and discussions on evolutionary dynamics in cells and viruses.
+% 	    \item Explored theoretical models and their biological applications.
+% 	\end{itemize}
+% \end{school}
 
 
 % \begin{school}{Jul 2023}{Institute for Advanced Studies in Basic Science, Zanjan, Iran}{The $28^{th}$ Special School on Topics in Physics}
@@ -341,6 +362,7 @@
 % 	    \item Engaged in advanced discussions on topics like condensed matter physics, quantum mechanics, and biosensing technologies.
 % 	\end{itemize}
 % \end{school}
+
 
 
 
