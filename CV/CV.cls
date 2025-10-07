@@ -26,7 +26,8 @@
 
 % Updated research experience environment with single date
 \newenvironment{research_exp}[4] % Date, Project, Where, Advisor
-  {\tabto{\tabspace}\parbox[t]{0.8\linewidth}{#2, #3}\hfill\textit{#1}\\%
+  {\tabto{\tabspace}\parbox[t]{0.80\linewidth}{#2}\hfill\textit{#1}\\%
+  #3
   \vspace{0.01pt}
    \tabto{\tabspace}\textbf{Advisor:} #4%
    \begin{adjustwidth}{\spacing}{\rightedge}
