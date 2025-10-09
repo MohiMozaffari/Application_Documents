@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.30)  9 OCT 2025 17:24
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.30)  9 OCT 2025 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,14 +858,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(36.135pt, 525.23788pt, 36.135pt)
-* v-part:(T,H,B)=(43.36243pt, 758.32199pt, 43.36243pt)
+* v-part:(T,H,B)=(36.135pt, 772.77686pt, 36.135pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=525.23788pt
-* \textheight=758.32199pt
+* \textheight=772.77686pt
 * \oddsidemargin=-36.135pt
 * \evensidemargin=-36.135pt
-* \topmargin=-65.90756pt
+* \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1006,24 +1006,24 @@ Underfull \hbox (badness 2351) in paragraph at lines 64--64
 [1
 
 ]
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 113.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 144.
+(Font)              scaled to size 12.0pt on input line 117.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 144.
+(Font)              scaled to size 12.0pt on input line 117.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 139.
  [2] (./CV.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `CV.out' has not changed.
-(rerunfilecheck)             Checksum: C0A96F174D2F0A6E5905820346DC7F0E;1242.
+(rerunfilecheck)             Checksum: EBDB5815799CF0129B0EA26E94150E71;1242.
  ) 
 Here is how much of TeX's memory you used:
  27375 strings out of 474761
  554408 string characters out of 5761074
- 1954148 words of memory out of 5000000
+ 1957148 words of memory out of 5000000
  49036 multiletter control sequences out of 15000+600000
  561528 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
