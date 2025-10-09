@@ -1,323 +1,189 @@
-\documentclass[12pt, b4paper]{cv}
-\usepackage[top=0.5in, left=0.5in, right=0.5in, bottom=0.5in]{geometry}
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{purple}
+
+\usepackage[top=0.6in, left=0.5in, right=0.5in, bottom=0.6in]{geometry}
+\setlength{\hintscolumnwidth}{3.5cm}
+
+\usepackage[default]{sourcesanspro}
+\renewcommand{\familydefault}{\sfdefault}
+
 \usepackage{fontawesome5}
-\usepackage{multicol}
-\usepackage{hyphenat}
 \usepackage{xcolor}
 \usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=1pt, leftmargin=1em}\definecolor{purple}{RGB}{100,50,150}
 
-\definecolor{purple}{RGB}{100,50,150}
-
-\usepackage[
-    colorlinks = true,
-    linkcolor  = purple,
-    urlcolor   = purple,
-    citecolor  = purple
-]{hyperref}
-
-\tolerance=1
-\emergencystretch=\maxdimen
-\hyphenpenalty=100000
-\hbadness=100000
-
-\renewcommand{\baselinestretch}{1.} % Adjusted line spacing
-
+% ---- Personal info ----
+\name{Mohaddeseh}{Mozaffari}
+\email{mohaddeseh.mozaffarii@gmail.com}
+\social[linkedin]{MohiMozaffari}
+\social[github]{MohiMozaffari}
+\homepage{mohimozaffari.github.io}
 
 \begin{document}
-
-\begin{center}
-%	    \textit{R\'esum\'e}\\
-	\textit{Curriculum Vitae}\\
-	{\Huge \textbf{Mohaddeseh Mozaffari}\par}
-
-	%\href{tel:(+98)9012051379}{\faIcon{phone} +98(0) 9012051379}
-	\href{mailto:mohaddeseh.mozaffarii@gmail.com}{\faIcon{envelope} mohaddeseh.mozaffarii@gmail.com}
-	\hspace{5pt} 
-	\href{https://www.linkedin.com/in/MohiMozaffari/}{\faIcon{linkedin} MohiMozaffari}
-	\hspace{5pt} 
-	\href{https://github.com/MohiMozaffari}{\faIcon{github} MohiMozaffari}
-	\hspace{5pt} 
-	\href{https://mohimozaffari.github.io/}{\faIcon{globe} Personal Website} 
-\end{center}
+\makecvtitle
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\textcolor{purple}{#2}}}
 
 
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
+% ======================================================
+\section{Education}
+\cventry{Sep 2022 -- Mar 2025}{M.Sc. in Statistical Physics and Complex Systems}{Shahid Beheshti University}{Tehran, Iran}{}{GPA: 18.5/20 ($\sim$4.00/4.00 WES, \textbf{Second Rank})}
+\cventry{Sep 2018 -- May 2022}{B.Sc. in Physics}{Shahid Beheshti University}{Tehran, Iran}{}{GPA: 17.3/20 ($\sim$3.63/4.00 WES, \textbf{First Rank})}
 
-%%%%%%%%%%%%%%
-
-% education
-{\Large \textbf{EDUCATION}}
-\vspace{0.1in}
-
-
-\begin{education}{Sep 2022 -- Mar 2025}{M.Sc.}{Statistical Physics and Complex Systems}{Shahid Beheshti University}{Tehran, Iran}{{18.5/20 (\textasciitilde 4.00/4.00 WES, \textbf{Second Rank})}}%; Admitted via Exceptional Talent Initiative}
-\end{education}
-
-\begin{education}{Sep 2018 -- May 2022}{B.Sc.}{Physics}{Shahid Beheshti University}{Tehran, Iran}{17.3/20 (\textasciitilde 3.63/4.00 WES, \textbf{First Rank})}
-\end{education}
-
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-
-%%%%%%%%%%%%%%%%%
-{\Large \textbf{RESEARCH INTERESTS}}
-
-\vspace{-5pt}
-\begin{multicols}{3}
-	\begin{itemize}[leftmargin=*]
-		\setlength\itemsep{-1pt}
-				\item Bio-Physics
-				\item Computional Neuroscience
-				\item Brain Network Analysis
-				\item Network Neuroscience
-				\item Machine Learning
-				\item Artificial Intelligence
-	\end{itemize}
-\end{multicols}
-
-
-
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-%%%%%%%%%%%%%%%%%%%%%%
-{\Large \textbf{RESEARCH EXPERIENCE}}
-\vspace{0.1in}
-
-\begin{research_exp}{Jul 2025 -- Present}{\textbf{Coevolutionary and Structural Balance Network Analysis and Classification of ADHD Using the Open-Source ADHD-400 Dataset}\vspace{5pt}}{Center for Complex Networks (CCNet), Tehran, Iran}{\href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{Prof. Reza Jafari}}
-
-\vspace{10pt}
-\begin{itemize}[leftmargin=*]
-    \item Collaborated on the application of stuctural and Coevolutionary balance theory on brain networks.
-
-    \item Engineered balance-theoretic features for group-level differentiation.
-
-    \item Trained machine learning models to classify ADHD vs. control subjects.
-
-    \item Contributed to drafting, editing, and reviewing the manuscript for publication.
+% ======================================================
+\section{Research Interests}
+\cvitem{}{
+\vspace{-0.5cm}
+  \begin{itemize}
+    \item \textbf{Biophysics}
+    \item \textbf{Computational Neuroscience}
+    \item \textbf{Brain Network Analysis}
+    \item \textbf{Machine Learning and Deep Learning}
+  \end{itemize}
+}
+\vspace{-0.6cm}
+% ======================================================
+\section{Research Experience}
+\cventry{Jul 2025 -- Present}{Coevolutionary and Structural Balance Network Analysis and Classification of ADHD}{Center for Complex Networks (CCNet)}{Tehran, Iran}{\textit{Advisor: Prof. Reza Jafari}}{
+\begin{itemize}[leftmargin=1cm]
+\item Applied structural and coevolutionary balance theory to brain networks.
+\item Engineered balance-theoretic features for group differentiation.
+\item Trained ML models to classify ADHD vs. control groups.
+\item Contributed to manuscript drafting and review.
+\end{itemize}}
+\vspace{0.2cm}
+\cventry{Jan 2024 -- Present}{Master’s Thesis -- Analysis of Topological Features of Brain Networks in Autism Spectrum Disorder Using Persistent Homology}{Shahid Beheshti University}{Tehran, Iran}{\qquad \qquad\textit{Advisor: Prof. Reza Jafari}}{
+\begin{itemize}[leftmargin=1cm]
+\item Applied topological data analysis (TDA) and persistent homology on fMRI data.
+\item Developed a node-removal-based approach to detect topological differences.
+\item Investigated age-related variations in brain network topology.
+\item Developed private Python package \texttt{NeuroPHorm} for TDA automation.
 \end{itemize}
-\end{research_exp}
+}
 
+% ======================================================
+\section{Publications}
 
-\begin{research_exp}{Jan 2024 -- Present}{\textbf{Master’s Thesis – Analysis of Topological Features of Brain Networks in the Autism Spectrum Disorder and Control Group Using Persistent Homology}\vspace{5pt}}{Shahid Beheshti University, Tehran, Iran}{\href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{Prof. Reza Jafari}}
+\cvitem{Journal Articles}{%
+Mohammadi, M.S., Shahrokhi, S., \textbf{Mozaffari, M.}, \textit{et al.} (2022). 
+Nonlinear optical response of IMIP ionic liquid-stabilized magnetic graphene oxide sheets. 
+\textit{Journal of Materials Science: Materials in Electronics}, 33, 13224–13233. 
+\href{https://doi.org/10.1007/s10854-022-08262-1}{DOI:10.1007/s10854-022-08262-1}.
+}
 
-\vspace{10pt}
-\begin{itemize}[leftmargin=*]
-	
-	\item Applied topological data analysis (TDA) and persistent homology on fMRI data.
+\cvitem{Conference Papers}{%
+Yousefzadeh, M., Shirzadeh Barough, S., Fakharifar, A., \textbf{Mozaffari, M.}, \textit{et al.} (2025). 
+Automated Noninvasive FFR Estimation from Biplane Coronary Angiography Using a Transformer-Based Deep Learning Framework. 
+\textit{The Second National Meeting on Artificial Intelligence in Medical Imaging} (Oral Presentation), Rajaee Heart Institute, Tehran, Iran.
+}
 
-	\item Developed a node-removal-based approach to detect differences in topological features.
-	
-	\item Investigated age-related differences in brain network topology.
+\cvitem{Manuscripts in Preparation}{%
+\textbf{Mozaffari, M.}, Roshandel, S., Jafari, G.R. 
+Persistent Homology Reveals Topological Alterations in Resting-State Brain Networks of Autism Spectrum Disorder.
+}
 
-	\item Trained machine learning models to classify study groups.
-
-	\item Developed a private Python package, \texttt{NeuroPHorm}, to automate the full TDA workflow.
-\end{itemize}
-\end{research_exp}
-
-
-% \begin{research_exp}{Dec 2023 -- Present}{\textbf{Automatic Classification and Segmentation of Coronary Arteries Using AI}}{Shahid Rajaei Heart Hospital, Tehran, Iran}{Dr. Mehdi Yousefzadeh}
-% \vspace{10pt}
-% 	\begin{itemize}
-% 		\item Collaborated on building an angiography dataset from X-ray Coronary Angiography (XCA), including DICOM handling, data cleaning, and vessel annotation.
-
-% 		\item Co-developed segmentation pipelines using classical image processing (Frangi, Sato, Meijering filters) and deep learning models (U-Net, U-Net3+, FPN).
-
-% 		\item Contributed specifically to image enhancement using the Meijering and Sato filters for coronary vessel segmentation.
-
-% 		\item Achieved a 93\% Dice score on the test set, exceeding performance of many recent segmentation approaches.
-% 	\end{itemize}
-	
-% \end{research_exp}
-
-
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-{\Large \textbf{PUBLICATIONS}}
-\vspace{5pt}
-
-% ---------- Journal Articles ----------
-\textit{Journal Articles}
-\begin{itemize}[leftmargin=*]
-\item Mohammadi, M.S., Shahrokhi, S., \textbf{Mozaffari, M.} \textit{et al.}
-    Nonlinear optical response of IMIP ionic liquid-stabilized magnetic graphene oxide sheets.
-    \textit{Journal of Materials Science: Materials in Electronics}, 33, 13224–13233 (2022).
-    \href{https://doi.org/10.1007/s10854-022-08262-1}{DOI:10.1007/s10854-022-08262-1}
-
-\end{itemize}
-
-% ---------- Conference Papers ----------
-\textit{Conference Papers}
-\begin{itemize}[leftmargin=*]
-    \item Yousefzadeh, M., Shirzadeh Barough, S., Fakharifar, A., \textbf{Mozaffari, M.}, \textit{et al.}
-    Automated Noninvasive FFR Estimation from Biplane Coronary Angiography Using a Transformer-Based Deep Learning Framework.
-    \textit{The Second National Meeting on Artificial Intelligence in Medical Imaging} (Oral Presentation), Rajaee Heart Institute, Tehran, Iran, June 11–13, 2025.
-\end{itemize}
-
-% ---------- Manuscripts in Preparation ----------
-\textit{Manuscripts in Preparation}
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Mozaffari, M.}, Roshandel, S., Jafari, G.R.
-    Persistent Homology Reveals Topological Alterations in Resting-State Brain Networks of Autism Spectrum Disorder.
-
-    \item Yousefzadeh, M., Shirzadeh Barough, S., Fakharifar, A., Tayyarazad, Y., Eghbali, N., \textbf{Mozaffari, M.}, \textit{et al.}
-    Coronary Artery Segmentation and Vessel-Type Classification in X-Ray Angiography: Machine-Learning Generalized Image Processing and Deep Neural Networks.
-
-\end{itemize}
-
+\cvitem{}{%
+Yousefzadeh, M., Shirzadeh Barough, S., Fakharifar, A., Tayyarazad, Y., Eghbali, N., \textbf{Mozaffari, M.}, \textit{et al.} 
+Coronary Artery Segmentation and Vessel-Type Classification in X-Ray Angiography: Machine-Learning Generalized Image Processing and Deep Neural Networks.
+}
 
 \pagebreak
+% ======================================================
+\section{Skills}
+\cvitem{Programming}{
+\vspace{-0.5cm}
+  \begin{itemize}
+    \item \textbf{Python} — Data analysis, fMRI preprocessing, and machine learning (NumPy, pandas, scikit-learn, PyTorch)
+    \item \textbf{C++} — Simulation and algorithmic modeling in physics and complex systems
+    \item \textbf{Bash / Linux} — Environment setup, scripting, and automation
+    \item \textbf{Git} — Version control and collaborative research workflows
+  \end{itemize}
+}
 
+\cvitem{Software and Tools}{
+    \vspace{-0.5cm}
+  \begin{itemize}
+    \item \textbf{Gephi} — Brain network visualization and community analysis
+    \item \textbf{\LaTeX{}} — Scientific writing and academic publishing
+    \item \textbf{Adobe Illustrator \& Photoshop} — Figure design and research illustration
+    \item \textbf{Microsoft Office Suite} — Documentation, reporting, and presentation
+  \end{itemize}
+}
 
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
+\cvitem{Languages}{
+    \vspace{-0.5cm}
+  \begin{itemize}
+    \item \textbf{English} — Fluent (academic and professional)
+    \item \textbf{Persian} — Native
+  \end{itemize}
+}
+\vspace{-0.6cm}
 
-% Skills
-
-{\Large \textbf{SKILLS}}
-
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Programming \& Software:} Python (Advanced; NumPy, pandas, scikit-learn, PyTorch, GUDHI), C++ (Intermediate), Bash/Linux, Git (Basic)
-    \item \textbf{Data Analysis \& Modeling:} fMRI preprocessing, Topological Data Analysis, Network Neuroscience, Machine Learning, Statistical Modeling
-    \item \textbf{Research \& Visualization Tools:} \LaTeX{} (Advanced), Adobe Illustrator (Advanced), Adobe Photoshop (Intermediate), Microsoft Office Suite
-    \item \textbf{Technical Competencies:} Scientific computing, data visualization, reproducible research workflows, automation
-    \item \textbf{Languages:} Persian (Native), English (Fluent)
+% ======================================================
+\section{Teaching \& Mentorship Experience}
+\cventry{Jun 2023 -- Present}{Python Instructor (Freelance / Online Platforms)}{Ostadbank \& Picha Club}{Tehran, Iran}{}{
+\begin{itemize}[leftmargin=1cm]
+\item Teach Python, data analysis, and ML to diverse learners.
+\item Guide students through projects using NumPy, pandas, PyTorch.
+\item Conduct lessons on algorithms, OOP, and GUI/game programming.
 \end{itemize}
+}
+\vspace{0.2cm}
 
-
-%\pagebreak
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-{\Large \textbf{TEACHING \& MENTORSHIP EXPERIENCE}}
-\vspace{0.1in}
-
-\begin{work}{Jun 2023 -- Present}{Python Instructor (Freelance / Online Platforms)}{Ostadbank \& Picha Club, Tehran, Iran}
-\vspace{-0.05in}
-\begin{itemize}[leftmargin=*]
-    \item Teach Python programming, data analysis, and machine learning to diverse learners.
-    \item Guide students through mini-projects using NumPy, pandas, Matplotlib, scikit-learn, and PyTorch.
-    \item Conduct classes on algorithms, OOP, and game/GUI development (Tkinter, Pygame).
+\cventry{Jan 2022 -- Jul 2025}{Teaching Assistant}{Department of Physics, Shahid Beheshti University}{Tehran, Iran}{}{
+\begin{itemize}[leftmargin=1cm]
+    \item Assisted under supervision of:
+\begin{itemize}
+\item Prof. Reza Jafari – Complex Systems Physics; Complex Networks and Graph Theory.
+\item Prof. S.~Ali Hosseiny – Stochastic Processes; Numerical Simulations.
+\item Prof. Marzieh Farhang – Analytical Mechanics.
 \end{itemize}
-\end{work}
-
-
-\begin{work}{Jan 2022 -- Jul 2025}{Teaching Assistant}{Department of Physics, Shahid Beheshti University}
-\vspace{-0.05in}
-\begin{itemize}[leftmargin=*]
-        \item Supported lectures, assignment design, and mentoring for theoretical and computational physics courses.
-        \item Assisted under supervision of:
-        \begin{itemize}
-            \item \href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{\textbf{Prof. Reza Jafari}} -- Complex Systems Physics (Jan--Jul 2025; Sep 2023--Jan 2024)
-            \item \href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{\textbf{Prof. Reza Jafari}} -- Complex Networks and Graph Theory (Jan--Jul 2025)
-            \item \href{https://alihosseiny.com/}{\textbf{Prof. S.~Ali Hosseiny Esfidvajani}} -- Stochastic Processes (Jan--Jul 2024)
-            \item \href{https://alihosseiny.com/}{\textbf{Prof. S.~Ali Hosseiny Esfidvajani}} -- Foundations of Numerical Simulations (Sep 2023--Jan 2024)
-            \item \href{https://en.sbu.ac.ir/~m_farhang/home}{\textbf{Prof. Marzieh Farhang}} -- Analytical Mechanics (Sep 2022--Jan 2023)
-        \end{itemize}
-    \end{itemize}
-\end{work}
-\vspace{-0.15in}
-
-
-
-
-
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}
-\vspace{-0.15in}
-
-
-
-{\Large \textbf{INVITED TALKS}}
-\vspace{0.1in}
-
-\begin{school}{Apr 2025}{Yasouj University, Yasouj, Iran}{Statistical Physics and Complex Systems}
-\vspace{-0.1in}
-\begin{itemize}[leftmargin=*]
-    \item Introduced undergraduate physics students to complex systems in an invited online Persian talk
-          \href{https://www.aparat.com/v/szyh283}{(Recording available)}.
-    % \item Outlined research and career pathways in statistical physics and complex systems.
 \end{itemize}
-\end{school}
+}
 
+% ======================================================
+\section{Invited Talks}
+\cvitem{Apr 2025}{\textbf{Statistical Physics and Complex Systems} -- Yasouj University, Iran. Introduced undergraduate physics students to complex systems in an invited Persian talk (\href{https://www.aparat.com/v/szyh283}{Recording available}).}
 
+% ======================================================
+\section{Certifications}
+\cvitem{Aug 2025}{Deep Learning (Python) for Neuroscience EEG Practical Course -- Udemy \href{https://www.udemy.com/certificate/UC-1c61cc70-1c1f-49fc-b6b1-972fa68f97df/}{(Certificate)}}
+\cvitem{Sep 2023}{Machine Learning Specialization -- Coursera / Stanford Online \href{https://coursera.org/share/73ec39657746dc6a319fa5a123047ccf}{(Certificate)}}
+\cvitem{Aug 2022}{Neural Networks and Deep Learning -- DeepLearning.AI / Coursera \href{https://coursera.org/share/601e36dd06712caa01ff9b867a6bf7a7}{(Certificate)}}
 
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
+% ======================================================
+\section{Workshops \& Conferences}
+\cvitem{Nov 2024}{fMRI Image Processing With CONN Toolbox -- Shahid Beheshti University, Tehran, Iran}
+\cvitem{Dec 2023}{School of Evolutionary Dynamics of Cells and Viruses -- IPM, Tehran, Iran}
+\cvitem{Jul 2023}{28th Special School on Topics in Physics -- IASBS, Zanjan, Iran}
 
-{\Large \textbf{CERTIFICATIONS}}
-\vspace{-5pt}
+% ======================================================
+% ---- References Section ----
+\section{References}
 
-\begin{itemize}[leftmargin=*]
-    \item Deep Learning (Python) for Neuroscience EEG Practical Course -- Udemy, Instructor: Ildar Rakhmatulin \textit{(Aug 2025)}
-          \href{https://www.udemy.com/certificate/UC-1c61cc70-1c1f-49fc-b6b1-972fa68f97df/}{(Certificate)}
-    \item Machine Learning Specialization -- Coursera / Stanford Online, Instructor: Andrew Ng \textit{(Sep 2023)}
-          \href{https://coursera.org/share/73ec39657746dc6a319fa5a123047ccf}{(Certificate)}
-    \item Neural Networks and Deep Learning -- DeepLearning.AI / Coursera, Instructor: Andrew Ng \textit{(Aug 2022)}
-          \href{https://coursera.org/share/601e36dd06712caa01ff9b867a6bf7a7}{(Certificate)}
-\end{itemize}
+\cvitem{}{\textbf{Dr. Reza Jafari},
+  Department of Physics and Institute for Cognitive Science and Brain, Shahid Beheshti University, Tehran, Iran.}
+\cvitem{}{
+  \href{mailto:gjafari@gmail.com}{\textcolor{purple}{\faIcon{envelope}}\, gjafari@gmail.com}\qquad
+  \href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{\textcolor{purple}{\faIcon{globe}}\, Homepage}
+}
 
+\cvitem{}{
+  \textbf{Dr. S. Ali Hosseiny Esfidvajani}
+  Faculty of Physics, Shahid Beheshti University, Tehran, Iran.}
+\cvitem{}{
+  \href{mailto:alihd22@gmail.com}{\textcolor{purple}{\faIcon{envelope}}\, alihd22@gmail.com}\qquad
+  \href{https://alihosseiny.com/}{\textcolor{purple}{\faIcon{globe}}\, Homepage}
+}
 
+\cvitem{}{
+  \textbf{Dr. Marzieh Farhang}
+  Faculty of Physics, Shahid Beheshti University, Tehran, Iran.}
+\cvitem{}{
+  \href{mailto:marzieh.farhang@gmail.com}{\textcolor{purple}{\faIcon{envelope}}\, marzieh.farhang@gmail.com}\qquad
+  \href{https://en.sbu.ac.ir/~m_farhang/home}{\textcolor{purple}{\faIcon{globe}}\, Homepage}
+}
 
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-{\Large \textbf{WORKSHOPS, SCHOOLS, AND CONFERENCES ATTENDED}}
-\vspace{-5pt}
-
-\begin{itemize}[leftmargin=*]
-    \item fMRI Image Processing With CONN Toolbox -- Shahid Beheshti University, Tehran, Iran \textit{(Nov 2024)}
-    % \item 5th National Conference on Quantum Information and Computing -- Shahrood University of Technology, Semnan, Iran (Sep 2024)
-    \item The School of Evolutionary Dynamics of Cells and Viruses -- School of Biological Sciences, IPM, Tehran, Iran \textit{(Dec 2023)}
-    \item The $28^{th}$ Special School on Topics in Physics -- Institute for Advanced Studies in Basic Science, Zanjan, Iran \textit{(Jul 2023)}
-\end{itemize}
-
-
-\vspace{-0.15in}
-\rule{\textwidth}{1pt}\\
-\vspace{-0.15in}
-
-
-
-{\Large \textbf{REFERENCES}}
-\vspace{-5pt}
-
-\begin{itemize}[leftmargin=*]
-	\item \textbf{Reza Jafari}, Professor of Physics, Department of Physics and Institute for Cognitive Science and Brian, Shahid Beheshti University, Tehran, Iran.\\
-	\href{tel:(+98)2129902773}{\faIcon{phone} (+98) 21 2990 2773}
-	\hspace{0.5in}
-	\href{mailto:g\_jafari@sbu.ac.ir}{\faIcon{envelope} g\_jafari@sbu.ac.ir}
-	\hspace{0.75in}
-	\href{mailto:gjafari@gmail.com}{\faIcon{envelope} gjafari@gmail.com}
-	\hspace{1.14in}
-	\href{https://complexity.sbu.ac.ir/professor-reza-jafari/}{\faIcon{globe}HomePage} 
-	\item \textbf{S. Ali Hosseiny Esfidvajani}, Assistant Professor, Faculty of Physics, Shahid Beheshti University, Tehran, Iran.\\
-	\href{tel:(+98)2129905043}{\faIcon{phone} (+98) 21 2990 5043}
-	\hspace{0.5in}
-	\href{mailto:al\_hosseiny@sbu.ac.ir}{\faIcon{envelope} al\_hosseiny@sbu.ac.ir}
-	\hspace{0.5in}
-	\href{mailto:alihd22@gmail.com}{\faIcon{envelope} alihd22@gmail.com}
-	\hspace{1.091in}
-	\href{https://alihosseiny.com/}{\faIcon{globe}HomePage} 
-	\item \textbf{Marzieh Farhang}, Associate Professor, Faculty of Physics, Shahid Beheshti University, Tehran, Iran.\\
-	\href{tel:(+98)2129905053}{\faIcon{phone} (+98) 21 2990 5053}
-	\hspace{0.5in}
-	\href{mailto:m\_farhang@sbu.ac.ir}{\faIcon{envelope} m\_farhang@sbu.ac.ir}
-	\hspace{0.54in}
-	\href{mailto:marzieh.farhang@gmail.com}{\faIcon{envelope} marzieh.farhang@gmail.com}
-	\hspace{0.5in}
-	\href{https://en.sbu.ac.ir/~m_farhang/home}{\faIcon{globe}HomePage} 
-\end{itemize}
 \end{document}
